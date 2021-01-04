@@ -1,1 +1,1 @@
-my_first_prject_for_odin
+my_first_project_for_odin
