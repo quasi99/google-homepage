@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      display: block;
+      font-size: 13px;
+      font-family: arial,sans-serif;
+      margin-right: 0;
+      margin-left: 0;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: rgba(0,0,0,.87);    
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar {
+      display: inline;
+      position: relative;
+      top: 16px;
+    }
+
+    .leftnav {
+      display: inline;
+      margin: 7px 0 0 10px;
+    }
+
+    #about {
+      padding-left: 15px;
+    }
+
+    #store {
+      padding-left: 11px;
+    }
+
+    .rightnav {
+      display: flex;
+      float: right;
+      position: relative;
+      column-gap: 15px;
+      padding: 0 30px;
+      align-items: center;
+      min-width: 220px;
+      top: -8px;
+    }
+
+    .google-apps {
+      display: inline-block;
+      background-position: -132px -38px;
+      background-image: url(//ssl.gstatic.com/gb/images/i2_2ec824b0.png);
+      background-size: 528px 68px;
+      height: 30px;
+      width: 30px;
+      opacity: .66;
+    }
+
+    #sign-in {
+      text-decoration: none;
+      color: #fff;
+      background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+      border: 1px solid #4285f4;
+      border-radius: 2px;
+      padding: 0 12px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+
+    .main-content {
+      margin-top: 47px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 25px;
+    }
+
+    #google-logo-img{
+      padding-top: 88px;
+      height: 92px;
+    }
+
+    .search-area {
+      display: flex;
+      align-self: stretch;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+
+    .search-bar {
+      display: flex;
+      width: 560px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      height: 39px;
+      padding: 0 8px 0 14px;        
+    }
+
+    .mag-glass {
+      display: flex;
+      align-self: center;
+      color: #9aa0a6;
+      fill: currentColor;
+      height: 20px;
+      width: 20px;
+      padding-right: 13px;
+    }
+ 
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    .clear-button {
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      cursor: pointer;
+    }
+
+    .mic {
+      height: 24px;
+      width: 24px;    
+    }
+
+
+    #Search-box {
+      border: none;
+      width: 582px;
+      background-color: transparent;
+      color: rgba(0,0,0,.87);
+      outline: none;
+      height: 34px !important;
+      padding: 1px 2px;
+    }
+
+    .search-button {
+      background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+      background-color: #f2f2f2;
+      border: 1px solid #f2f2f2;
+      border-radius: 4px;
+      color: #5F6368;
+      font-size: 14px;
+      margin: 11px 4px;
+      padding: 0 16px;
+      line-height: 27px;
+      height: 36px;
+      min-width: 54px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .footer-control {
+      height: 162px;
+    }
+
+    .footer-bar {
+      display: flex;
+      line-height: 40px;
+      justify-content: flex-end;
+      background: #f2f2f2;
+      border-top: 1px solid #e4e4e4;
+      font-size: 14px;
+    }
+
+    .footer-bar a {
+      color: #5f6368;
+      text-decoration: none;
+    }
+
+    .footer-bar a:hover {
+      text-decoration: underline;
+    }
+
+    .leftfoot {
+      display: flex;
+      margin-right: auto;
+    }
+
+    .rightfoot {
+      display: flex;
+      margin-right: 27px;    
+    }
+
+    .footer-bar a {
+      padding-left: 27px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="leftnav">
+      <a href="#" id="about">About</a>
+      <a href="#" id="store">Store</a>
+    </div>
+    <div class="rightnav">
+      <a href="#" id="gmail">Gmail</a>
+      <a href="#" id="images">Images</a>
+      <a href="#" class="google-apps" title="Google apps"></a>
+      <a href="#" id="sign-in">Sign in</a>
+    </div>
+  </div>
+    <main class="main-content">
+      <div class="google-logo">
+        <img id="google-logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+      </div>        
+    <div class="search-area">
+      <div class="search-bar"> 
+        <span class="mag-glass">
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+        </span>
+            <input type="text" id="Search-box" title="Search" name="Search">
+        <div class="clear-button">
+          <svg class="mic" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path>
+            <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+            <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path>
+            <path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
+          </svg>
+
+                        
+        </div>
+      </div>
+
+    <div class="search-buttons" action="search">
+      <input type="submit" name="Google-Search" class="search-button" id="google-search", value="Google Search">
+      <input type="submit", name="i'm feeling lucky" class="search-button" id="i'm feeling lucky" value="I'm Feeling Lucky">
+    </div>
+    <div class="promo">
+      <a href="#" class="promo">Click Here!</a>
+        <span>Check it out</span>
+    </div>
+  </div>
+
+    </main>
+
+    <div class="footer-control">
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-bar">
+            <div class="leftfoot">
+                <div class="advertising">
+                    <a href="#" id="advertising">Advertising</a>
+                </div>
+                <div class="business">
+                    <a href="#" id="business">Business</a>
+                </div>
+                <div class="howsearch">
+                    <a href="#" id="how-search-works">How Search works</a>
+                </div>
+            </div>
+
+            <div class="rightfoot">
+                <div class="privacy">
+                    <a href="#" id="privacy">Privacy</a>
+                </div>
+                <div class="terms">
+                    <a href="#" id="terms">Terms</a>
+                </div>
+                <div class="settings">
+                    <a href="#" id="settings">Settings</a>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
